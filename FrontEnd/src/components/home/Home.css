@@ -1,0 +1,66 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.home h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.home p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  line-height: 1.8;
+  font-style: italic;
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.home .intro-description {
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  font-weight: 300;
+  animation: fadeIn 2s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.home .cta-button {
+  background-color: #fff;
+  color: #0072ff;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home .cta-button:hover {
+  background-color: #0072ff;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
