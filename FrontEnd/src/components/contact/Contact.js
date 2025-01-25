@@ -29,7 +29,7 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        alert("Thank you for contacting me!");
+        alert("Thank you for contacting me! I will get back to you soon.");
         setFormData({ name: "", email: "", message: "" }); // Reset form after successful submission
       } else {
         const errorData = await response.json();
@@ -46,8 +46,7 @@ const Contact = () => {
       <h2>Contact Me</h2>
       <p>Feel free to reach out to me using the form below!</p>
       <div className="contact-form-container">
-        <form onSubmit={handleSubmit} 
-        className="contact-form">
+        <form onSubmit={handleSubmit} className="contact-form">
 
           <div className="form-group">
             <label htmlFor="name">Name:</label>
@@ -96,4 +95,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;                                           
+export default Contact;
