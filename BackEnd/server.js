@@ -27,7 +27,6 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => {
     console.error("Could not connect to MongoDB", err.message);
-    process.exit(1);
   });
 
 // Test Route
@@ -50,8 +49,4 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-// Start the server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+module.exports = app; // Export the app for Vercel serverless functions

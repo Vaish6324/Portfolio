@@ -46,7 +46,9 @@ const Contact = () => {
       <h2>Contact Me</h2>
       <p>Feel free to reach out to me using the form below!</p>
       <div className="contact-form-container">
-        <form onSubmit={handleSubmit} className="contact-form">
+        <form onSubmit={handleSubmit} 
+        className="contact-form">
+
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
